@@ -4,7 +4,7 @@ if (sessionStorage.getItem('consultant_admin_auth') !== 'true') {
 const SIGNALING_URL =
     window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
         ? 'http://localhost:3001'
-        : 'https://YOUR-DEPLOYED-SERVER-URL.com';
+        : 'https://shore-escapade-refurnish.ngrok-free.dev';
 const socket = io(SIGNALING_URL, { autoConnect: true });
 
 const RTC_CONFIG = {
